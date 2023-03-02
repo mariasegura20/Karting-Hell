@@ -15,11 +15,11 @@
 nav {
     align-items: center;
     background-color: #FF0000;
+    box-shadow: 5px 5px 5px black;
     color: black;
     display: flex;
     justify-content: space-between;
     padding: 1vh 2vw;
-    box-shadow: 5px 5px 5px black;
 }
 
 /* Logotipo */
@@ -50,21 +50,21 @@ nav {
 
 /* Animación en la lista del menú */
 .nav-links a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
     background-color: #000;
-    transition: all 0.3s ease-in-out;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
     transform-origin: center;
+    transition: all 0.3s ease-in-out;
+    width: 0;
 }
 
 .nav-links a:hover::before {
-    width: 100%;
     left: 0;
     transform: scaleX(1);
+    width: 100%;
 }
 
 /* Icono del menú (versión móvil)*/
@@ -112,21 +112,21 @@ nav {
 
 /* Animación en la lista del menú */
 .nav-list.responsive a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
     background-color: white;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
     transition: all 0.3s ease-in-out;
     transform-origin: center;
+    width: 0;
 }
 
 .nav-list.responsive a:hover::before {
-    width: 100%;
     left: 0;
     transform: scaleX(1);
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
