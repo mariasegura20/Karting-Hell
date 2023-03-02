@@ -1,5 +1,13 @@
-* {
+/* TIPOGRAFÍA */
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+
+@font-face {
     font-family: 'Pontano Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+}  
+
+* {
+    font-family: 'Pontano Sans', sans-serif;
     margin: 0;
 }
 
@@ -11,16 +19,15 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1vh 2vw;
+    box-shadow: 5px 5px 5px black;
 }
 
 /* Logotipo */
-
 .logo img {
     height: 9vh;
 }
 
 /* Enlaces del menú (versión escritorio) */
-
 .nav-links {
     display: flex;
 }
@@ -37,6 +44,29 @@ nav {
     text-decoration: none;
 }
 
+.nav-links a {
+    position: relative;
+}
+
+/* Animación en la lista del menú */
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.nav-links a:hover::before {
+    width: 100%;
+    left: 0;
+    transform: scaleX(1);
+}
+
 /* Icono del menú (versión móvil)*/
 .burger {
     cursor: pointer;
@@ -51,7 +81,6 @@ nav {
 }
 
 /* Enlaces del menú (versión móvil) */
-
 .nav-list {
     display: none;
 }
@@ -75,6 +104,29 @@ nav {
     color: inherit;
     font-size: 1.3rem;
     text-decoration: none;
+}
+
+.nav-list.responsive a {
+    position: relative;
+}
+
+/* Animación en la lista del menú */
+.nav-list.responsive a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.nav-list.responsive a:hover::before {
+    width: 100%;
+    left: 0;
+    transform: scaleX(1);
 }
 
 @media screen and (max-width: 768px) {
