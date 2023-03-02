@@ -1,0 +1,26 @@
+.welcome {
+    background-position: center;
+    background-image:url(../img/index_welcome_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.text-box {
+    background: #FF0000;
+    border: 10px solid rgba(139, 0, 0, 0.5);
+    max-width: 30vw;
+    height: 30vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*hemos utilizado los colores negro y rojo para los cambios de bloques
+media query
+
+añadir texto visitanos*/

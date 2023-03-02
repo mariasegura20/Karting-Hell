@@ -14,7 +14,7 @@
 /* MENÚ DE NAVEGACIÓN */
 nav {
     align-items: center;
-    background-color: red;
+    background-color: #FF0000;
     color: black;
     display: flex;
     justify-content: space-between;
