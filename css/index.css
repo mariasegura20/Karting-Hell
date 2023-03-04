@@ -1,21 +1,37 @@
 .welcome {
+    align-items: center;
     background-position: center;
-    background-image:url(../img/index_welcome_fondo.jpg);
+    background-image:url(../img/index_welcome_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
     height: 90vh;
+    justify-content: right;
     width: 100%;
 }
 
 .text-box {
+    margin: 2vw;
     align-items: center;
     background: #FF0000;
     border: 10px solid rgba(139, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    height: 30vw;
-    justify-content: center;
+    height: 300px;
+    justify-content:space-evenly;
     padding: 2vw;
     text-align: center;
-    width: 30vw;
+    width: 300px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+.twitter-timeline {
+    margin: 0 2vw;
 }
