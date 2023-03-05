@@ -153,8 +153,8 @@ button {
     border: 1px solid #000000;
     box-shadow: 0px 15px 15px 3px rgba(0, 0, 0, 0.75);
     border-radius: 25px;
-    font-size: 1.25rem;
     color: white;
+    font-size: 1.25rem;
     padding: 5px 15px;
 }
 
@@ -165,16 +165,19 @@ button:hover {
 
 /* PIE DE PÁGINA */
 footer {
+    align-items: center;
     background: rgba(0, 0, 0, 0.85);
-    height: 25vh;
-    width: 96vw;
-    padding: 0 2vw;
     color: white;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: space-around;
+    padding: 0 2vw;
 }
 
 .footer-column {
     display: grid;
-    grid-template-columns: repeat(2,46vw);
+    grid-template-columns: repeat(2,50%);
 }
 
 /* MEDIA QUERY */
