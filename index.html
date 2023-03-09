@@ -10,23 +10,28 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <!-- MENÚ DE NAVEGACIÓN -->
     <header>
         <nav>
+            <!-- Logo -->
             <div class="logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
+            <!-- Versión escritorio -->
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="circuitos.html">Circuitos</a></li>
                 <li><a href="reservar.html">Reservar</a></li>
                 <li><a href="visitanos.html">Visítanos</a></li>
             </ul>
+            <!-- Versión móvil -->
             <div class="burger">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
         </nav>
+        <!-- Versión móvil -->
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="circuitos.html">Circuitos</a></li>
@@ -35,6 +40,7 @@
         </ul>
     </header>
 
+    <!-- SECCIÓN DE BIENVENIDA -->
     <section class="welcome">
         <div class="text-box">
             <h1>¡BIENVENIDOS!</h1>
@@ -42,21 +48,39 @@
             <button>Reservar</button>
         </div>
     </section>
+
+    <!-- SECCIÓN CIRCUITOS + TWITTER -->
     <div class="preview-circuits-aside">
+
+        <!-- Previsualización de circuitos -->
         <section class="section-preview-circuits">
             <h2>NUESTROS CIRCUITOS</h2>
             <div class="preview-circuits">
-                <div class="preview-circuits-top"></div>
-                <div class="preview-circuits-left"></div>
-                <div class="preview-circuits-right"></div>
-                <div class="preview-circuits-bottom"></div>
+                <svg class="preview-circuits-top" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
+                    <polygon points='-75,0 175,0 75,100 25,100' />
+                </svg>
+                <div class="preview-circuits-middle">
+                    <svg class="preview-circuits-middle-left" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
+                        <polygon points='0,0 ,0 200,100 0,100' />
+                    </svg>
+                    <svg class="preview-circuits-middle-right" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
+                        <polygon points='0,0 ,0 200,100 0,100' />
+                    </svg>
+                </div>
+                <svg class="preview-circuits-bottom" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
+                    <polygon points='-75,0 175,0 75,100 25,100'/>
+                </svg>
             </div>
         </section>
+
+        <!-- Twitter -->
         <aside>
             <div class="supuesto-twitter"></div>
         <!--<a class="twitter-timeline" data-height="auto" data-theme="dark" href="https://twitter.com/Karting_RFEdA?ref_src=twsrc%5Etfw">Tweets by Karting_RFEdA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </aside>
     </div>
+
+    <!-- PIE DE PÁGINA -->
     <footer>
         <div class="footer-column">
             <div class="footer-left">

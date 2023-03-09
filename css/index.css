@@ -49,6 +49,44 @@
     border: 7px solid #FF0000;
     height: 60vh;
     width:calc(100% - 14px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+polygon {
+    fill: #FF0000;
+}
+
+.preview-circuits-top {
+    width: 50%;
+    height: 10%;
+}
+
+.preview-circuits-middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview-circuits-middle-left {
+    width: 10%;
+    height: 10%;
+}
+
+.preview-circuits-middle-right {
+    width: 10%;
+    height: 10%;
+    transform: rotate(180deg);
+}
+
+.preview-circuits-bottom {
+    width: 35%;
+    height: 7%;
+    transform: rotate(180deg);
 }
 
 /* Twitter */
