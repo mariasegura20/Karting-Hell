@@ -45,7 +45,7 @@
         <div class="text-box">
             <h1>¡BIENVENIDOS!</h1>
             <p>Aquí podrás disfrutar de la emoción y la adrenalina de conducir nuestros karts en la pista que mejor se adapte a ti, para hacer que tu experiencia sea inolvidable.</p>
-            <button>Reservar</button>
+            <button onclick="window.location='reservar.html'">Reservar</button>
         </div>
     </section>
 
@@ -56,27 +56,35 @@
         <section class="section-preview-circuits">
             <h2>NUESTROS CIRCUITOS</h2>
             <div class="preview-circuits">
-                <svg class="preview-circuits-top" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
+                <svg class="preview-circuits-top" id="nameCircuit" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
                     <polygon points='-75,0 175,0 75,100 25,100' />
+                    <text class="text-top large" x="36%" y="97%">Circuito Indoor</text>
+                    <text class='text-top phone' x='31%' y='93%'>Circuito Indoor</text>
                 </svg>
                 <div class="preview-circuits-middle">
-                    <svg class="preview-circuits-middle-left" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
-                        <polygon points='0,0 ,0 200,100 0,100' />
+                    <svg class="preview-circuits-middle-left" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice" onclick="newBackground('izq')">
+                        <polygon points='0,0 100,0 50,100 0,100'/>
+                        <text class="text-middle large" x="15%" y="96%">&lt;</text>
+                        <text class="text-middle phone" x="15%" y="80%">&lt;</text>
                     </svg>
-                    <svg class="preview-circuits-middle-right" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
-                        <polygon points='0,0 ,0 200,100 0,100' />
+                    <svg class="preview-circuits-middle-right" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice" onclick="newBackground('der')">
+                        <polygon points='0,0 100,0 50,100 0,100'/>
+                        <text class="text-middle large" x="15%" y="96%">&lt;</text>
+                        <text class="text-middle phone" x="15%" y="80%">&lt;</text>
                     </svg>
                 </div>
-                <svg class="preview-circuits-bottom" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
+                <svg class="preview-circuits-bottom" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice" onclick="window.location='reservar.html'">
                     <polygon points='-75,0 175,0 75,100 25,100'/>
+                    <text class="text-bottom large" x="-62%" y="-93%">Reservar</text>
+                    <text class="text-bottom phone" x="-62%" y="-90%">Reservar</text>
                 </svg>
             </div>
         </section>
 
         <!-- Twitter -->
         <aside>
-            <div class="supuesto-twitter"></div>
-        <!--<a class="twitter-timeline" data-height="auto" data-theme="dark" href="https://twitter.com/Karting_RFEdA?ref_src=twsrc%5Etfw">Tweets by Karting_RFEdA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+            <a class="twitter-timeline large" data-height="520px" data-theme="dark" href="https://twitter.com/Karting_RFEdA?ref_src=twsrc%5Etfw">Tweets by Karting_RFEdA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline phone" data-height="300px" data-theme="dark" href="https://twitter.com/Karting_RFEdA?ref_src=twsrc%5Etfw">Tweets by Karting_RFEdA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </aside>
     </div>
 
@@ -97,5 +105,6 @@
         <div class="copyright">COPYRIGHT 2023 © KARTING HELL</div>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

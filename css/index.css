@@ -1,10 +1,7 @@
 /* BLOQUE DE BIENVENIDA */
 .welcome {
     align-items: center;
-    background-position: center;
-    background-image:url(../img/index_welcome_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #000000 url(../img/index_welcome_background.jpg) no-repeat center/ cover;
     display: flex;
     height: 90vh;
     justify-content: right;
@@ -25,10 +22,18 @@
     width: 300px;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
 /* BLOQUE DE CIRCUITOS+TWITTER */
 .preview-circuits-aside {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #FFFFFF;
     display: grid;
     grid-template-columns: 75% 25%;
     height: 100vh;
@@ -42,17 +47,24 @@
     height: 100vh;
     justify-content:space-evenly;
     padding: 0 2vw;
+    margin-bottom: 25vh;
+}
+
+h2 {
+    color: #FF0000;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .preview-circuits {
-    background-color: white;
+    align-items: center;
+    background: #FFFFFF url(../img/circuito_indoor_negro.png) no-repeat center/ auto 50vh;
     border: 7px solid #FF0000;
-    height: 60vh;
-    width:calc(100% - 14px);
     display: flex;
     flex-direction: column;
+    height: 60vh;
     justify-content: space-between;
-    align-items: center;
+    width:calc(100% - 14px);
 }
 
 polygon {
@@ -60,40 +72,60 @@ polygon {
 }
 
 .preview-circuits-top {
-    width: 50%;
     height: 10%;
+    width: 50%;
+}
+
+.text-top {
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+
+.phone {
+    display: none;
 }
 
 .preview-circuits-middle {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-middle {
+    font-size: 3rem;
 }
 
 .preview-circuits-middle-left {
-    width: 10%;
     height: 10%;
+    width: 10%;
 }
 
 .preview-circuits-middle-right {
-    width: 10%;
     height: 10%;
     transform: rotate(180deg);
+    width: 10%;
 }
 
 .preview-circuits-bottom {
-    width: 35%;
     height: 7%;
     transform: rotate(180deg);
+    width: 35%;
+}
+
+.text-bottom {
+    transform: rotate(180deg);
+    font-size: 0.45rem;
 }
 
 /* Twitter */
 aside {
-    background-color: black;
+    background-color: #000000;
     height: 100vh;
     padding: 0 2vw;
+    display: flex;
+    align-items: center;
 }
 
 .supuesto-twitter {
@@ -102,20 +134,36 @@ aside {
     width: 100%;
 }
 
-
-
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
     .welcome {
         justify-content: center;
     }
-
+    
     .preview-circuits-aside {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
     }
-
+    
     .preview-circuits {
         width: calc(100% - 14px) ;
+    }
+    
+    .preview-circuits {
+        background-size: auto 35vh;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .large {
+        display: none;
+    }
+
+    .phone {
+        display: inline;
+    }
+
+    .text-top {
+        font-size: 0.4rem;
     }
 }
