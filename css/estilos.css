@@ -92,7 +92,6 @@ nav {
 .nav-list.responsive {
     align-items: center;
     background-color: #000000;
-    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,6 +107,7 @@ nav {
     color: inherit;
     font-size: 1.3rem;
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .nav-list.responsive a {
@@ -188,7 +188,11 @@ footer h3, footer p, .copyright {
 
     .burger {
         display: block;
-    }    
+    }
+
+    footer {
+        height: max-content;
+    }
 
     .footer-column {
         flex-direction: column;
@@ -196,6 +200,6 @@ footer h3, footer p, .copyright {
 
     .footer-left,.footer-right {
         width: 100%;
-        padding: 2vw;
+        margin: 3vh 2vw;
     }
 }
