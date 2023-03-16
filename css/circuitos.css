@@ -1,0 +1,50 @@
+    .pista_indoor_compe{
+        background-color: black;
+    }
+
+    .pista_indoor_compe li{
+        color: white;
+        display: flex;
+        justify-content: left;
+
+    }
+    .pista_indoor_compe th{
+        color: black;
+        background-color: grey;
+        text-align: center;
+    }
+
+    .pista_indoor_compe td{
+        color: black;
+        background-color: white;
+        text-align: center;
+    }
+
+    .pista_outdoor{
+        background-color: #FF0000;
+    }
+
+    .pista_outdoor h2{
+        font-size: 65px;
+        margin-left: 50px;
+    }
+
+    .imagen_tick img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .imagen_cruz img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .imagen_circuitogeneral{
+        position: relative;
+
+    }
+    .pista_indoor_compe h2{
+        color: white;
+        font-size:65px;
+        margin-left: 50px;
+    }
