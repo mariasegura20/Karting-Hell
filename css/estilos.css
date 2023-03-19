@@ -198,7 +198,7 @@ footer h3, footer p, .copyright {
     }
 
     .footer-left,.footer-right {
-        width: 100%;
         margin: 3vh 2vw;
+        width: 100%;
     }
 }
