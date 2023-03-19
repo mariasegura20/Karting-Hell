@@ -30,15 +30,15 @@ function uploadCurrentBackground(direction) {
 function changeBackgroundPC() {
     switch (currentBackground) {
         case 0:
-            background.style.background = "white url(../img/circuito_competición_negro.png) no-repeat center/ auto 50vh";
+            background.style.background = "white url(img/circuito_competición_negro.png) no-repeat center/ auto 50vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text class='text-top' x='30%' y='97%'>Circuito Competición</text>";
             break;
         case 1:
-            background.style.background = "white url(../img/circuito_indoor_negro.png) no-repeat center/ auto 50vh";
+            background.style.background = "white url(img/circuito_indoor_negro.png) no-repeat center/ auto 50vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text class='text-top' x='36%' y='97%'>Circuito Indoor</text>";
             break;
         case 2:
-            background.style.background = "white url(../img/circuito_outdoor_black.png) no-repeat center/ auto 50vh";
+            background.style.background = "white url(img/circuito_outdoor_negro.png) no-repeat center/ auto 50vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text class='text-top' x='34%' y='97%'>Circuito Outdoor</text>";
             break;
     }
@@ -47,15 +47,15 @@ function changeBackgroundPC() {
 function changeBackgroundTablet() {
     switch (currentBackground) {
         case 0:
-            background.style.background = "white url(../img/circuito_competición_negro.png) no-repeat center/ auto 35vh";
+            background.style.background = "white url(img/circuito_competición_negro.png) no-repeat center/ auto 35vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text class='text-top' x='30%' y='97%'>Circuito Competición</text>";
             break;
         case 1:
-            background.style.background = "white url(../img/circuito_indoor_negro.png) no-repeat center/ auto 35vh";
+            background.style.background = "white url(img/circuito_indoor_negro.png) no-repeat center/ auto 35vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text class='text-top' x='36%' y='97%'>Circuito Indoor</text>";
             break;
         case 2:
-            background.style.background = "white url(../img/circuito_outdoor_black.png) no-repeat center/ auto 35vh";
+            background.style.background = "white url(img/circuito_outdoor_negro.png) no-repeat center/ auto 35vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text class='text-top' x='34%' y='97%'>Circuito Outdoor</text>";
             break;
     }
@@ -64,15 +64,15 @@ function changeBackgroundTablet() {
 function changeBackgroundPhone() {
     switch (currentBackground) {
         case 0:
-            background.style.background = "white url(../img/circuito_competición_negro.png) no-repeat center/ auto 35vh";
+            background.style.background = "white url(img/circuito_competición_negro.png) no-repeat center/ auto 35vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text id='phone' class='text-top' x='23%' y='93%'>Circuito Competición</text>";
             break;
         case 1:
-            background.style.background = "white url(../img/circuito_indoor_negro.png) no-repeat center/ auto 35vh";
+            background.style.background = "white url(img/circuito_indoor_negro.png) no-repeat center/ auto 35vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text id='phone' class='text-top' x='31%' y='93%'>Circuito Indoor</text>";
             break;
         case 2:
-            background.style.background = "white url(../img/circuito_outdoor_black.png) no-repeat center/ auto 35vh";
+            background.style.background = "white url(img/circuito_outdoor_negro.png) no-repeat center/ auto 35vh";
             nameCircuit.innerHTML = "<polygon points='-75,0 175,0 75,100 25,100' /> <text id='phone' class='text-top' x='29%' y='93%'>Circuito Outdoor</text>";
             break;
     }
