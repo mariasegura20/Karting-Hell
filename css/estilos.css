@@ -149,6 +149,20 @@ button:hover {
     padding:7px 20px;
 }
 
+.redButton {
+    background: #FF0000;
+    border: 1px solid #FF0000;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 1.25rem;
+    padding: 5px 15px;
+}
+
+.redButton:hover {
+    margin: -2px 0;
+    padding:7px 20px;
+}
+
 /* PIE DE PÁGINA */
 footer {
     align-items: center;

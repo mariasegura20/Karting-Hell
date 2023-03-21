@@ -1,0 +1,72 @@
+.pista_indoor_compe {
+    background-color: black;
+    width: calc(100% - 4vw);
+    padding: 2vw;
+    height: min-content;
+}
+
+.pista_indoor_compe h2{
+    color: #FF0000;
+    font-size:4.5rem;
+    letter-spacing: 3px;
+}
+
+.pista_indoor_compe h3{
+    color: white;
+    text-decoration: underline;
+    font-size:2rem;
+}
+
+.pistas_img_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pistas_img {
+    max-width: 45vw;
+    max-height: 50vh;
+}
+
+.pistas_info {
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.pistas_info li {
+    color: white;
+    display: flex;
+    justify-content: left;
+    padding-left: 2vw;
+}
+
+.pistas_info table {
+    width: 75%;
+    height: 20vh;
+}
+
+.pistas_info th{
+    color: black;
+    background-color: grey;
+    text-align: center;
+    width: 20%;
+    height: 50%;
+}
+
+.pistas_info td{
+    color: black;
+    background-color: white;
+    text-align: center;
+    width: 20%;
+    height: 50%;
+}
+
+.pistas_info img {
+    max-height: 5vh;
+    max-width: 10vw;
+}
