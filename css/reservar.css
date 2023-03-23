@@ -1,0 +1,53 @@
+.bloque_izq{
+    justify-content: left;
+    background: black url(../img/imagen_kart_reservas.jpg) no-repeat center/ cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 25vw;
+    height: 90vh;
+    position: relative;
+    padding-left: 5vw;
+    padding-top: 15vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: #FF0000 30px solid;  
+    border-bottom: #FF0000 30px solid;
+    border-left: #FF0000 solid 20px;
+    border-right: #FF0000 solid 20px;  
+}
+
+.bloque_izq ul{
+    display: flex;
+    color: white;
+    padding: 15px;
+    font-size: 2vw;
+}
+
+.bloque_total{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloque_total h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 3vw;
+    font-size: min(10vw, 10vh);
+    color: #FF0000
+}
+
+.bloque_central{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 7vh;
+}
+
+.bloque_der{
+    
+}
