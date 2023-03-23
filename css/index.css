@@ -36,7 +36,8 @@ p {
     color: #FFFFFF;
     display: grid;
     grid-template-columns: 75% 25%;
-    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 /* Circuitos */
