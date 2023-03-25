@@ -10,23 +10,28 @@
     <link rel="stylesheet" href="css/circuitos.css">
 </head>
 <body>
+    <!-- MENÚ DE NAVEGACIÓN -->
     <header>
         <nav>
+            <!-- Logo -->
             <div class="logo">
                 <a href="index.html"> <img src="img/logo.png" alt="Logo de Karting Hell"> </a>
             </div>
+            <!-- Versión escritorio -->
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="circuitos.html">Circuitos</a></li>
                 <li><a href="reservar.html">Reservar</a></li>
                 <li><a href="visitanos.html">Visítanos</a></li>
             </ul>
+            <!-- Versión móvil -->
             <div class="burger">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
         </nav>
+        <!-- Versión móvil -->
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="circuitos.html">Circuitos</a></li>
@@ -34,104 +39,107 @@
             <li><a href="visitanos.html">Visítanos</a></li>
         </ul>
     </header>
-    <article class="pista_indoor_compe"> 
-        <h2> PISTA INDOOR </h2>
-        <div class="pistas_img_info">
-            <img class="pistas_img" src="img/circuito_indoor.png" alt="Silueta del circuito indoor">
-            <div class="pistas_info">
-                <h3> Caracteristicas </h3>
+
+    <!-- CIRCUITO INDOOR -->
+    <article class="circuits_indoor_competition"> 
+        <h2>CIRCUITO INDOOR</h2>
+        <div class="circuits_img_info">
+            <img class="circuits_img" src="img/circuito_indoor.png" alt="Silueta del circuito indoor">
+            <div class="circuits_info">
+                <h3>Características</h3>
                 <ul>
                     <li>⮞ 442 metros de circuito</li>
-                    <li>⮞ Kart de 270 cv</li>
+                    <li>⮞ Kart de 270cv</li>
                     <li>⮞ Hasta 15 personas</li>
-                    <li>⮞ Iluminacion interna, barra con comida y bebida, gradas donde caben hasta 50 personas</li>
+                    <li>⮞ Iluminación interna, barra con comida y bebida, gradas con capacidad para 50 personas</li>
+                    <li>⮞ Precio: 10€/pax</li>
                 </ul>
                 <table>
                     <tr>
                         <th>Registro de tiempo y vueltas</th>
                         <th>Foto de los 3 primeros</th>
                         <th>Descuentos</th>
-                        <th>Entrada en tabla de mejores tiempos</th>
+                        <th>Tabla de mejores tiempos</th>
                     </tr>
                     <tr>
-                        <td> <img src="img/tick.png" alt="Si"> </td>
-                        <td> <img src="img/tick.png" alt="Si"> </td>
-                        <td> <img src="img/cruz.png" alt="No"> </td>
-                        <td> <img src="img/cruz.png" alt="No"> </td>
+                        <td><img src="img/tick.png" alt="Si"></td>
+                        <td><img src="img/tick.png" alt="Si"></td>
+                        <td><img src="img/cruz.png" alt="No"></td>
+                        <td><img src="img/cruz.png" alt="No"></td>
                     </tr>
                 </table>
-                <button class="redButton">Reservar</button>
+                <button class="redButton" onclick="window.location='reservar.html'">Reservar</button>
             </div>
         </div>
     </article>
-    <article class="pista_outdoor"> 
-        <h2>
-            PISTA OUTDOOR
-        </h2>
-        <div class="pistas_img_info">
-            <img class="pistas_img" src="img/circuito_outdoor_negro.png">
-            <div class="pistas_info">
-                <h3>
-                    Caracteristicas
-                </h3>
+
+    <!-- CIRCUITO OUTDOOR -->
+    <article class="circuit_outdoor"> 
+        <h2>CIRCUITO OUTDOOR</h2>
+        <div class="circuits_img_info">
+            <img class="circuits_img" src="img/circuito_outdoor_negro.png" alt="Silueta del circuito outdoor">
+            <div class="circuits_info">
+                <h3>Características</h3>
                 <ul>
                     <li>⮞ 538 metros de circuito</li>
-                    <li>⮞ Kart de 300 cv</li>
+                    <li>⮞ Kart de 300cv</li>
                     <li>⮞ Hasta 25 personas</li>
-                    <li>⮞ Iluminacion con focos led, barra con comida y bebida, gradas con capacidad de 70 personas</li>
+                    <li>⮞ Iluminación con focos led, barra con comida y bebida, gradas con capacidad para 70 personas</li>
+                    <li>⮞ Precio: 15€/pax</li>
                 </ul>
                 <table>
                     <tr>
                         <th>Registro de tiempo y vueltas</th>
                         <th>Foto de los 3 primeros</th>
                         <th>Descuentos</th>
-                        <th>Entrada en tabla de mejores tiempos</th>
+                        <th>Tabla de mejores tiempos</th>
                     </tr>
                     <tr>
-                        <td> <img src="img/tick.png" alt="Si"> </td>
-                        <td> <img src="img/tick.png" alt="Si"> </td>
-                        <td> <img src="img/cruz.png" alt="No"> </td>
-                        <td> <img src="img/cruz.png" alt="No"> </td>
+                        <td><img src="img/tick.png" alt="Si"></td>
+                        <td><img src="img/tick.png" alt="Si"></td>
+                        <td><img src="img/tick.png" alt="Si"></td>
+                        <td><img src="img/cruz.png" alt="No"></td>
                     </tr>
                 </table>
-                <button> Reservar </button>
+                <button onclick="window.location='reservar.html'">Reservar</button>
             </div>
         </div>
     </article>
-    <article class="pista_indoor_compe"> 
-        <h2 id="header_competicion">
-            PISTA COMPETICIÓN
-        </h2>
-        <div class="pistas_img_info">
-            <img class="pistas_img" id="img_compe" src="img/circuito_competición.png">
-            <div class="pistas_info">
-                <h3>
-                    Caracteristicas
-                </h3>
+
+    <!-- CIRCUITO COMPETICIÓN -->
+    <article class="circuits_indoor_competition"> 
+        <h2>PISTA COMPETICIÓN</h2>
+        <div class="circuits_img_info">
+            <img class="circuits_img" id="img_compe" src="img/circuito_competición.png" alt="Silueta del circuito de competición">
+            <div class="circuits_info">
+                <h3>Características</h3>
                 <ul>
                     <li>⮞ 480 metros de circuito</li>
-                    <li>⮞ Kart de 390 cv</li>
+                    <li>⮞ Kart de 390cv</li>
                     <li>⮞ Hasta 15 personas</li>
-                    <li>⮞ Iluminacion con focos led, barra con comida y bebida, gradas con capacidad hasta 100 personas</li>
+                    <li>⮞ Iluminación con focos led, barra con comida y bebida, gradas con capacidad para 100 personas</li>
+                    <li>⮞ Precio: 20€/pax</li>
                 </ul>
                 <table>
                     <tr>
                         <th>Registro de tiempo y vueltas</th>
                         <th>Foto de los 3 primeros</th>
                         <th>Descuentos</th>
-                        <th>Entrada en tabla de mejores tiempos</th>
+                        <th>Tabla de mejores tiempos</th>
                     </tr>
                     <tr>
-                        <td> <img src="img/tick.png" alt="Si"> </td>
-                        <td> <img src="img/tick.png" alt="Si"> </td>
-                        <td> <img src="img/cruz.png" alt="No"> </td>
-                        <td> <img src="img/cruz.png" alt="No"> </td>
+                        <td><img src="img/tick.png" alt="Si"></td>
+                        <td><img src="img/tick.png" alt="Si"></td>
+                        <td><img src="img/tick.png" alt="Si"></td>
+                        <td><img src="img/tick.png" alt="Si"></td>
                     </tr>
                 </table> 
-                <button class="redButton"> Reservar </button>
+                <button class="redButton" onclick="window.location='reservar.html'">Reservar</button>
             </div>
         </div>      
     </article>
+
+    <!-- PIE DE PÁGINA -->
     <footer>
         <div class="footer-column">
             <div class="footer-left">

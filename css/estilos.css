@@ -13,6 +13,11 @@
     padding: 0;
 }
 
+h2 {
+    color: #FF0000;
+    font-size: 4rem;
+}
+
 footer p {
     font-size: 0.75rem;
 }
@@ -141,6 +146,7 @@ button {
     border-radius: 25px;
     color: #FFFFFF;
     font-size: 1.25rem;
+    font-weight: 400;
     padding: 5px 15px;
 }
 
@@ -155,6 +161,7 @@ button:hover {
     border-radius: 25px;
     color: #000000;
     font-size: 1.25rem;
+    font-weight: 400;
     padding: 5px 15px;
 }
 
@@ -212,7 +219,12 @@ footer h3, footer p, .copyright {
     }
 
     .footer-left,.footer-right {
-        margin: 3vh 2vw;
-        width: 100%;
+        margin: 2vh 2vw;
+        width: calc(100% - 4vw);
+        height: 20vh;
+    }
+
+    .footer-tab {
+        margin-left: 5vw;
     }
 }

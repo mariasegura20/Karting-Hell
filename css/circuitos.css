@@ -1,187 +1,119 @@
-.pista_indoor_compe {
-    background-color: black;
-    width: calc(100% - 4vw);
-    height: 90vh;
-    padding: 2vw;
-}
-
-.pista_outdoor{
-    background-color: #FF0000;
-    width: calc(100% - 4vw);
-    height: 90vh;
-    padding: 2vw;
-}
-
-.pista_outdoor h2{
-    color: #000000;
-    font-size:4.5rem;
-    letter-spacing: 3px;
-}
-
-.pista_outdoor h3{
-    color: #000000;
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-.pista_indoor_compe h2{
-    color: #FF0000;
-    font-size:4.5rem;
-    letter-spacing: 3px;
-}
-
-.pista_indoor_compe h3{
-    color: white;
-    text-decoration: underline;
-    font-size:2rem;
-}
-
-button{
-    font-weight: bold;
-}
-
-.pistas_img_info {
-    display: flex;
-    justify-content: space-between;
+/* ESTILOS COMUNES A TODAS LAS SECCIONES */
+.circuits_img_info {
     align-items: center;
+    display: flex;
+    height: 90%;
+    justify-content: space-between;
 }
 
-.pistas_img {
-    max-width: 45vw;
+.circuits_img {
     max-height: 50vh;
+    max-width: 45vw;
 }
 
-.pistas_info {
-    height: 70vh;
-    width: 50vw;
+.circuits_info {
+    align-items:center;
     display: flex;
     flex-direction: column;
+    height: 80vh;
     justify-content:space-around;
-    align-items:center;
-    padding-top: -30px;
+    width: 50vw;
 }
 
-.pistas_info li {
-    color: white;
-    display: flex;
-    justify-content: left;
-    font-size:2rem;
+.circuits_info h3 {
+    font-size: 1.75rem;
+    text-decoration: underline;
+}
+
+.circuits_info ul {
+    list-style-type: none
+}
+
+.circuits_info li {
+    color: #FFFFFF;
+    font-size:1.5rem;
     padding-left: 2vw;
 }
 
-.pistas_info table {
-    width: 75%;
-    height: 20vh;
+.circuits_info table {
     border-collapse: collapse;
+    height: 20vh;
+    width: 80%;
 }
 
-.pistas_info th{
-    color: black;
-    background-color: grey;
+.circuits_info th{
+    background-color: #B2B2B2;
+    border: #000000 3px solid;
+}
+
+.circuits_info td{
+    background-color: #FFFFFF;
+    border: #000000 3px solid;
+    height:max-content;
     text-align: center;
     width: 20%;
-    height: 40%;
-    border: black 3px solid;
 }
 
-.pistas_info td{
-    color: black;
-    background-color: white;
-    text-align: center;
-    width: 20%;
-    height: 50%;
-    border: black 3px solid;
-}
-
-.pistas_info img {
+.circuits_info img {
     max-height: 5vh;
     max-width: 10vw;
 }
 
-.pista_outdoor li{
-    color:black;
+/* SECCIÓN INDOOR / COMPETICIÓN */
+.circuits_indoor_competition {
+    background-color: #000000;
+    height: max-content;
+    padding: 2vw;
+    width: calc(100% - 4vw);
+}
+
+.circuits_indoor_competition h3{
+    color: #FFFFFF;
+}
+
+/* SECCIÓN OUTDOOR */
+.circuit_outdoor{
+    background-color: #FF0000;
+    height: max-content;
+    padding: 2vw;
+    width: calc(100% - 4vw);
+}
+
+.circuit_outdoor h2, .circuit_outdoor li {
+    color: #000000;
 }
 
 @media  screen and (max-width: 768px) {
-
-    .pista_indoor_compe{
-        height: max(100vh, 100vw);
+    h2 {
+        font-size: 2.75rem;
+        text-align: center;
     }
 
-    .pista_outdoor{
-        height: max(100vh, 100vw);
-    }
-
-    #header_competicion{
-        font-size: 8vw;
-    }
-
-    .pista_outdoor h2{
+    .circuits_img_info{
         display: flex;
-        justify-content: center;
-        font-size: 9vw;
-    }
-
-    .pista_indoor_compe h2{
-        display: flex;
-        justify-content: center;
-        font-size: 10vw;
-    }
-
-    .pistas_img_info{
-        max-width: 50vw;
-        max-height: 50vh;
-        justify-content:center;
         flex-direction: column;
-        position: relative;
-        top: min(7rem, 20vh);
-        left: 20vw;
+        justify-content: space-around;
     }
 
-    .pistas_img{
-        justify-content: space-between;
-        max-width: 12rem;
-        max-height: 15rem;
-        height: max-content;
+    .circuits_img{
+        max-width: 60vw;
+        max-height: 50vh;
     }
 
-    .pistas_info{
-        justify-content: end;
-        align-items: center;
-        align-content: space-between;
-        position: relative;
-        top:10vw;
-        width: auto;
-    }
- 
-    .pistas_info li{
-        font-size: 1.05rem;
-        width: auto;
-        padding: 1vw;
+    .circuits_info{
+        width: calc(100% - 4vw);
     }
 
-    .pistas_info table{
+    .circuits_info h3{
+        font-size: 1.25rem;
+    }
+    
+    .circuits_info li{
+        font-size: 1rem;
+    }
+
+    .circuits_info table{
         font-size: x-small;
-        width: 80vw;
-        padding: 2vw;
-    }
-
-    .pistas_info h3{
-        font-size: smaller;
-    }
-    .pistas_info button{
-        align-self: center;
-        margin:20px;
-    }   
-
-    #img_compe{
-        position: relative;
-        top: 15px;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .pistas_img_info{
-        top: 20vh;
+        height: 15vh;
     }
 }

@@ -58,7 +58,7 @@ h2 {
 
 .preview-circuits {
     align-items: center;
-    background: #FFFFFF url(../img/circuito_indoor_negro.png) no-repeat center/ auto 50vh;
+    background: #FFFFFF url(../img/circuito_indoor_negro.png) no-repeat center/ auto 40vh;
     border: 7px solid #FF0000;
     display: flex;
     flex-direction: column;
