@@ -1,4 +1,9 @@
 /* ESTILOS COMUNES A TODAS LAS SECCIONES */
+h2 {
+    color: #FF0000;
+    font-size: 4rem;
+}
+
 .circuits_img_info {
     align-items: center;
     display: flex;
