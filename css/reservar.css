@@ -5,23 +5,24 @@
     flex-direction: column;
     align-content: center;
     width: 25vw;
-    height: 90vh;
-    position: relative;
     padding-left: 5vw;
     padding-top: 15vh;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-top: #FF0000 30px solid;  
-    border-bottom: #FF0000 30px solid;
-    border-left: #FF0000 solid 20px;
-    border-right: #FF0000 solid 20px;  
+    border-top: #FF0000 3vw solid;  
+    border-bottom: #FF0000 3vw solid;
+    border-left: #FF0000 solid 1.5vw;
+    border-right: #FF0000 solid 1.5vw;  
 }
 
-.bloque_izq ul{
+.bloque_izq p{
     display: flex;
     color: white;
-    padding: 15px;
-    font-size: 2vw;
+    font-size: 3vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 2vw;
 }
 
 .bloque_total{
@@ -46,8 +47,100 @@
     margin-left: 7vw;
     margin-right: 7vw;
     margin-bottom: 7vh;
+    height: 90vh;
+    width: 85vw;
 }
 
 .bloque_der{
-    
+    background: white;
+    width: 60vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#horas input{
+    flex-direction: row;
+    width: 10vw;
+    margin: auto;
+    width: 35%;
+}
+
+.bloque_der p{
+    font-size: min(3vh,5vw);
+    justify-content: left;
+    font: bold;
+    position: relative;
+    top: 1.5vw;
+}
+.bloque_der button{
+    margin: 2.5vw;
+    width: 35%
+    height: 3vw;
+    font-size: 1.5vw;
+}
+
+.bloque_der input{
+    width: 30vw;
+    height: 1rem;
+    font-size:2vh;
+    background-color: grey;
+    border: 3px black solid;
+    color:black;
+}
+
+.bloque_der input::placeholder{
+    color:black;
+}
+
+#selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+    right: 10vw;
+    top: 1vw;
+    width: 50%;
+    height: 10%;
+}
+@media screen and (max-width: 768px) {
+
+    .bloque_total{
+        height: 120vh;
+    }
+
+    .bloque_central{
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .bloque_izq{
+        justify-content: center;
+        width: 91.5%;
+        margin: auto;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .bloque_der{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .bloque_izq p{
+        font-size: 5vh;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        bottom: 10vh;
+        font-size: 10vw;
+    }
+
 }

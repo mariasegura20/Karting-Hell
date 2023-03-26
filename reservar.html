@@ -39,24 +39,32 @@
         <h1>RESERVAS</h1>
         <div class="bloque_central">
             <div class="bloque_izq">
-                <ul id="seleccion_1">⮞ Datos personales</ul>
-                <ul id="seleccion_2">⮞ Datos de la reserva</ul>
-                <ul id="seleccion_3">⮞ Confirmación</ul>
+                <p>Reserva karts</p>
             </div>
             <div class="bloque_der">
                 <form>
-                    Nombre <br>
+                    <p>Nombre</p> <br>
                     <input type="text" placeholder= "Nombre"> <br>
-                    Apellidos <br>
-                    <input type="text" placeholder= "Apellidos"> <br>
-                    Fecha de nacimiento <br>
-                    <input type="date"> <br>
-                    Numero de teléfono <br>
+                    <p>Apellidos</p> <br>
+                    <input type="text" placeholder= "Apellidos"> <br> 
+                    <p>Numero de teléfono</p> <br>
                     <input type="text" placeholder= "Número"> <br>
-                    Correo electrónico <br>
-                    <input type="text" placeholder= "Correo electrónico"> <br>
-                    Domicilio <br>
-                    <input type="text" placeholder= "Domicilio"> <br>
+                    <p>Fecha de reserva</p> <br>
+                    <input type="date"> <br>
+                    <p>Numero de personas</p> <br>
+                    <input type="text" placeholder="Numero de personas"> <br>
+                    <p>Tipo de pista</p> <br>
+                    <select name="Tipo de pista"> 
+                        <option value="Indoor">Indoor</option>
+                        <option value="Outdoor">Outdoor</option>
+                        <option value="Competicion">Competicion</option>
+                    </select> <br>
+                    <div id="horas">
+                        <p>Hora de inicio</p> <br>
+                        <input type="time" placeholder="Hora inicio"> <br>
+                        <p>hora de finalizacion</p> <br>
+                        <input type="time" placeholder="hora fin">
+                    </div>
                     <button>continuar</button>
                 </form>
             </div>
