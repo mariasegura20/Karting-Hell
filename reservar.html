@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/smallLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/reservar.css">
+    <script type="text/javascript" src="./js/validar-formulario.js"></script>
 </head>
 <body>
     <header id="start">
@@ -42,30 +43,31 @@
                 <p>Reserva karts</p>
             </div>
             <div class="bloque_der">
-                <form>
+                <form onsubmit="return Verificarvalores()">
                     <p>Nombre</p> <br>
-                    <input type="text" placeholder= "Nombre"> <br>
+                    <input type="text" placeholder= "Nombre" id="Nombreform"> <br>
                     <p>Apellidos</p> <br>
-                    <input type="text" placeholder= "Apellidos"> <br> 
+                    <input type="text" placeholder= "Apellidos" id="Apellform"> <br> 
                     <p>Numero de teléfono</p> <br>
                     <input type="text" placeholder= "Número"> <br>
                     <p>Fecha de reserva</p> <br>
-                    <input type="date"> <br>
+                    <input type="date" id="Fechaform"> <br>
                     <p>Numero de personas</p> <br>
-                    <input type="text" placeholder="Numero de personas"> <br>
+                    <input type="text" placeholder="Numero de personas" id="Personasform"> <br>
                     <p>Tipo de pista</p> <br>
-                    <select name="Tipo de pista"> 
-                        <option value="Indoor">Indoor</option>
-                        <option value="Outdoor">Outdoor</option>
-                        <option value="Competicion">Competicion</option>
+                    <select name="Tipo de pista" id="Pistaform">
+                        <option value="-1" disable selected>Selecciona una pista</option>
+                        <option value="1">Indoor</option>
+                        <option value="2">Outdoor</option>
+                        <option value="3">Competicion</option>
                     </select> <br>
                     <div id="horas">
                         <p>Hora de inicio</p> <br>
-                        <input type="time" placeholder="Hora inicio"> <br>
+                        <input type="time" id="Fechainicioform" placeholder="Hora inicio"> <br>
                         <p>hora de finalizacion</p> <br>
-                        <input type="time" placeholder="hora fin">
+                        <input type="time" id="Fechafinform" placeholder="hora fin">
                     </div>
-                    <button>continuar</button>
+                    <button>Reservar</button>
                 </form>
             </div>
         </div>
