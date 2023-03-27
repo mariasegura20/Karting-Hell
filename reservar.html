@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="img/smallLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/reservar.css">
-    <script type="text/javascript" src="./js/validar-formulario.js"></script>
 </head>
 <body>
     <header id="start">
@@ -36,38 +35,70 @@
             <li><a href="visitanos.html">Visítanos</a></li>
         </ul>
     </header>
-    <div class="bloque_total">
+    <div class="container">
         <h1>RESERVAS</h1>
-        <div class="bloque_central">
-            <div class="bloque_izq">
-                <p>Reserva karts</p>
+        <div class="form">
+            <div class="left">
+                <h2>Reserva karts</h2>
             </div>
-            <div class="bloque_der">
-                <form onsubmit="return Verificarvalores()">
-                    <p>Nombre</p> <br>
-                    <input type="text" placeholder= "Nombre" id="Nombreform"> <br>
-                    <p>Apellidos</p> <br>
-                    <input type="text" placeholder= "Apellidos" id="Apellform"> <br> 
-                    <p>Numero de teléfono</p> <br>
-                    <input type="text" placeholder= "Número"> <br>
-                    <p>Fecha de reserva</p> <br>
-                    <input type="date" id="Fechaform"> <br>
-                    <p>Numero de personas</p> <br>
-                    <input type="text" placeholder="Numero de personas" id="Personasform"> <br>
-                    <p>Tipo de pista</p> <br>
-                    <select name="Tipo de pista" id="Pistaform">
-                        <option value="-1" disable selected>Selecciona una pista</option>
-                        <option value="1">Indoor</option>
-                        <option value="2">Outdoor</option>
-                        <option value="3">Competicion</option>
-                    </select> <br>
-                    <div id="horas">
-                        <p>Hora de inicio</p> <br>
-                        <input type="time" id="Fechainicioform" placeholder="Hora inicio"> <br>
-                        <p>hora de finalizacion</p> <br>
-                        <input type="time" id="Fechafinform" placeholder="hora fin">
+            <div class="right">
+                <form>
+                    <div class="personal-data">
+                        <label>Nombre</label>
+                        <input type="text" class="alphabetic-text" placeholder= "Nombre" required>
+                        <br>
+                        <label>Apellidos</label>
+                        <input type="text" class="alphabetic-text" placeholder= "Apellidos" required>
+                        <br>
+                        <div class="date-phone">
+                            <div class="column">
+                                <label>Fecha</label>
+                                <input type="date" placeholder="Fecha" id="date">
+                            </div>
+                            <br>
+                            <div class="column">
+                                <label>Nº de teléfono</label>
+                                <input type="text" placeholder= "Número">
+                            </div>
+                        </div>
+                        <br>
+                        <label>Correo Electrónico</label>
+                        <input type="email" placeholder="Correo Electrónico">
+                        <br>
+                        <label>Domicilio</label>
+                        <input type="text" placeholder="Domicilio">
+                        <br>
+                        <div class="button">
+                            <button id="btn-personal-data">Continuar</button>
+                        </div>
                     </div>
-                    <button>Reservar</button>
+                    <div class="rent-data">
+                        <label>Nº de personas</label>
+                        <input type="text" class="" placeholder="Numero de personas">
+                        <br>
+                        <label>Tipo de pista</label>
+                        <select name="Tipo de pista"> 
+                            <option value="Indoor">Indoor</option>
+                            <option value="Outdoor">Outdoor</option>
+                            <option value="Competicion">Competición</option>
+                        </select>
+                        <br>
+                        <div class="data-phone">
+                            <div class="column">
+                                <label>Hora de inicio</label>
+                                <input type="time" class="time" id="startTime" placeholder="Hora inicio">
+                            </div>
+                            <br>
+                            <div class="column">
+                                <label>Hora de finalización</label>
+                                <input type="time" class="time" id="endTime" placeholder="hora fin">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="button">
+                            <button>Confirmar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -89,5 +120,6 @@
         <div class="copyright">COPYRIGHT 2023 &#169; KARTING HELL</div>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/validación-formulario.js"></script>
 </body>
 </html>

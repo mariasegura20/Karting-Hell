@@ -1,153 +1,120 @@
-.bloque_izq{
-    justify-content: left;
-    background: black url(../img/imagen_kart_reservas.jpg) no-repeat center/ cover;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 25vw;
-    padding-left: 5vw;
-    padding-top: 15vh;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top: #FF0000 3vw solid;  
-    border-bottom: #FF0000 3vw solid;
-    border-left: #FF0000 solid 1.5vw;
-    border-right: #FF0000 solid 1.5vw;  
+h1 {
+    color: #FF0000;
+    font-size: 4rem;
 }
 
-.bloque_izq p{
-    display: flex;
-    color: white;
-    font-size: 3vw;
-    justify-content: center;
+.container{
     align-items: center;
-    position: relative;
-    right: 2vw;
-}
-
-.bloque_total{
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: max-content;
+    height: calc(100% + 4vw);
+    padding: 2vw;
 }
 
-.bloque_total h1{
+.form {
     display: flex;
-    justify-content: center;
-    color: white;
-    margin: 3vw;
-    font-size: min(10vw, 10vh);
-    color: #FF0000
+    padding: 2vh 0;
 }
 
-.bloque_central{
+.left {
+    background: black url(../img/imagen_kart_reservas.jpg) no-repeat center/ cover;
+    border: #FF0000 1.5vw solid;  
+    border-radius: 10px 0 0 10px;
     display: flex;
-    flex-direction: row;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-bottom: 7vh;
-    width: 85vw;
+    height: 70vh;
+    justify-content: center;
+    padding-top: 5%;
+    width: 25vw;
 }
 
-.bloque_der{
-    background: white;
-    width: 60vw;
-    height: max(95vh,65vw);
+h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.right {
+    align-items: center;
+    background: #FFFFFF;
+    border: #FFFFFF 1.5vw solid;
+    border-radius: 0 10px 10px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    height: 70vh;
+    justify-content:space-between;
+    padding-top: 5%;
+    width: 50vw;
 }
 
-#horas input{
-    flex-direction: row;
-    width: 10vw;
-    margin: auto;
-    width: 35%;
-}
-
-.bloque_der p{
-    font-size: min(3vh,3vw);
-    justify-content: left;
-    font: bold;
-    position: relative;
-    top: 0.5vw;
-}
-
-.bloque_der button{
+.button {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 7rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
+    width: 100%;
 }
 
-.bloque_der input{
+.right-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column;
     width: 30vw;
-    height: 1rem;
-    font-size:2vh;
-    background-color: grey;
-    border: 3px black solid;
-    color:black;
-    position: relative;
-    bottom: 1rem;
 }
 
-.bloque_der input::placeholder{
-    color:black;
+.date-phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.rent-data {
+    display: none;
+    flex-direction: column;
+    width: 30vw;
+}
+
+input, select {
+    background-color: #B2B2B2;
+    border-color: #000000;
+    border-radius: 5px;
+    color: #000000;
 }
 
 @media screen and (max-width: 768px) {
 
-    .bloque_total{
-        height: 150%;
-        justify-content: center;
+    h1 {
+        font-size: 2.75rem;
     }
 
-    .bloque_central{
+    .form {
         flex-direction: column;
-        width: 90vw;
+        width: calc(100% - 4vw);
     }
 
-    .bloque_izq{
-        justify-content: center;
-        width: 91.5%;
-        margin: auto;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 10px;
-    }
-
-    .bloque_der{
+    .left {
+        border-radius: 10px 10px 0 0;
+        height: 30vh;
         width: 100%;
-        height: 120%;
-        margin: auto;
-        justify-content: center;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
+    }
+    
+    .right {
+        border-radius: 0 0 10px 10px;
+        height: max-content;
+        width: 100%;
     }
 
-
-    .bloque_izq p{
-        font-size: 5vh;
-        justify-content: center;
-        display: flex;
-        position: relative;
-        bottom: 10vh;
-        font-size: 10vw;
+    .personal-data, .rent-data {
+        width: 100%;
     }
 
-    .bloque_der button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2.5vw;
-        width: 6rem;
-        height: 2.5rem;
-        font-size: 1rem;
+    .date-phone {
+        flex-direction: column;
     }
 }
