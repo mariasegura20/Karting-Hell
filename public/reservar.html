@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Karting Hell</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Karting Hell es una empresa de alquiler de karts situada en Hell, Noruega.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/smallLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/reservar.css">
+</head>
+<body>
+    <header id="start">
+        <nav>
+            <div class="logo">
+                <a href="inicio.html"> <img src="img/logo.png" alt="Logo de Karting Hell"> </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="circuitos.html">Circuitos</a></li>
+                <li><a href="reservar.html">Reservar</a></li>
+                <li><a href="visitanos.html">Visítanos</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <ul class="nav-list">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="circuitos.html">Circuitos</a></li>
+            <li><a href="reservar.html">Reservar</a></li>
+            <li><a href="visitanos.html">Visítanos</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h1>RESERVAS</h1>
+        <div class="form">
+            <div class="left">
+                <h2>Reserva karts</h2>
+            </div>
+            <div class="right">
+                <form>
+                    <div class="personal-data">
+                        <label>Nombre</label>
+                        <input type="text" class="alphabetic-text" placeholder= "Nombre" required>
+                        <br>
+                        <label>Apellidos</label>
+                        <input type="text" class="alphabetic-text" placeholder= "Apellidos" required>
+                        <br>
+                        <div class="date-phone">
+                            <div class="column">
+                                <label>Fecha</label>
+                                <input type="date" placeholder="Fecha" id="date">
+                            </div>
+                            <br>
+                            <div class="column">
+                                <label>Nº de teléfono</label>
+                                <input type="text" placeholder= "Número">
+                            </div>
+                        </div>
+                        <br>
+                        <label>Correo Electrónico</label>
+                        <input type="email" placeholder="Correo Electrónico">
+                        <br>
+                        <label>Domicilio</label>
+                        <input type="text" placeholder="Domicilio">
+                        <br>
+                        <div class="button">
+                            <button id="btn-personal-data">Continuar</button>
+                        </div>
+                    </div>
+                    <div class="rent-data">
+                        <label>Nº de personas</label>
+                        <input type="text" class="" placeholder="Numero de personas">
+                        <br>
+                        <label>Tipo de pista</label>
+                        <select name="Tipo de pista"> 
+                            <option value="Indoor">Indoor</option>
+                            <option value="Outdoor">Outdoor</option>
+                            <option value="Competicion">Competición</option>
+                        </select>
+                        <br>
+                        <div class="data-phone">
+                            <div class="column">
+                                <label>Hora de inicio</label>
+                                <input type="time" class="time" id="startTime" placeholder="Hora inicio">
+                            </div>
+                            <br>
+                            <div class="column">
+                                <label>Hora de finalización</label>
+                                <input type="time" class="time" id="endTime" placeholder="hora fin">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="button">
+                            <button>Confirmar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-column">
+            <div class="footer-left">
+                <h3>Contáctanos</h3>
+                <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en ponerte en contacto con nosotros:</p>
+                <p class="footer-tab">Lånkebanen, 7517 Hell, Noruega</p>
+                <a class="footer-tab" href="mailto:info@kartinghell.com">info@kartinghell.com</a>
+            </div>
+            <div class="footer-right">
+                <h3>Patrocinadores</h3>
+                <p></p>
+            </div>
+        </div>
+        <a class="beginning" href="#start">IR AL COMIENZO</a>
+        <div class="copyright">COPYRIGHT 2023 &#169; KARTING HELL</div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/validación-formulario.js"></script>
+</body>
+</html>
