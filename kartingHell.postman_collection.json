@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "d2adead0-f996-45f5-aa33-e5f3e80079d7",
+		"name": "kartingHell",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getBookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookingByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookings/64317e645d0464ef1c190c29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"64317e645d0464ef1c190c29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postBookingByID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\":\"Anacleto\",\r\n    \"Apellidos\":\"Agente Secreto\",\r\n    \"Fecha\":\"22-11-2023\",\r\n    \"Teléfono\":123456789,\r\n    \"Correo\":\"anacletoAS@gmail.com\",\r\n    \"Domicilio\":\"Principal, 23\",\r\n    \"Nº Personas\":8,\r\n    \"Pista\":\"Indoor\",\r\n    \"Hora inicio\":\"17:00\",\r\n    \"Hora fin\":\"18:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookings/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putBookingByID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\":\"Anacleto\",\r\n    \"Apellidos\":\"Agente Secreto\",\r\n    \"Fecha\":\"22-11-2023\",\r\n    \"Teléfono\":123456789,\r\n    \"Correo\":\"anacletoAS@gmail.com\",\r\n    \"Domicilio\":\"Principal, 23\",\r\n    \"Nº Personas\":5,\r\n    \"Pista\":\"Indoor\",\r\n    \"Hora inicio\":\"17:00\",\r\n    \"Hora fin\":\"18:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookings/64317e645d0464ef1c190c29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"64317e645d0464ef1c190c29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBookings",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBoonkingByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookings/64317e645d0464ef1c190c29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"64317e645d0464ef1c190c29"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
