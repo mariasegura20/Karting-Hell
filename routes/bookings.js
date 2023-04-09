@@ -22,13 +22,13 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function (req, res) {
-    let movie = req.body;
-    bookingsService.add(movie, (err, movie) => {
+    let bookings = req.body;
+    bookingsService.add(bookings, (err, bookings) => {
             if (err) {
                 res.status(500).send({
                     msg: err
                 });
-            } else if (movie.length != 0){
+            } else if (bookings.length != 0){
                 res.status(201).send({
                     msg: '¡Reserva completada!'
                 });
@@ -55,17 +55,17 @@ router.delete('/', function (req, res) {
 
 router.get('/:_id', function (req, res) {
     let _id = req.params._id;
-    bookingsService.get(_id, (err, movie) => {
+    bookingsService.get(_id, (err, bookings) => {
             if (err) {
                 res.status(500).send({
                 	msg: err
             	});
-            } else if (movie.length == 0){
+            } else if (bookings.length == 0){
             	res.status(500).send({
                     msg: "La reserva no existe"
                 });
             } else {
-                res.status(200).send(movie);
+                res.status(200).send(bookings);
             }
         }
     );
@@ -74,8 +74,8 @@ router.get('/:_id', function (req, res) {
 
 router.put('/:_id', function (req, res) {
     const _id = req.params._id;
-    const updatedMovie = req.body;
-    bookingsService.update(_id, updatedMovie, (err, numUpdates) => {
+    const updatedBookings = req.body;
+    bookingsService.update(_id, updatedBookings, (err, numUpdates) => {
         if (err) {
             res.status(500).send({
                 msg: err

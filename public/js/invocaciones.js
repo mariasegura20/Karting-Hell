@@ -1,5 +1,5 @@
-function getReserva(movieId) {
-    var myUrl = "/movies/" + movieId;
+function getReserva(bookingsID) {
+    var myUrl = "/reservados/" + bookingsID;
     $.ajax({
         type: "GET",
         dataType: "json",
@@ -17,7 +17,7 @@ function getReserva(movieId) {
 function postReserva() {
     $.ajax({
         type: "POST",
-        url: "/movies",
+        url: "/reservados",
         contentType: "application/json",
         dataType: "text",
         data: JSON.stringify({
@@ -36,7 +36,7 @@ function postReserva() {
 }
 
 function getAllReservas() {
-    var myUrl = "/movies";
+    var myUrl = "/reservados";
     $.ajax({
         type: "GET",
         dataType: "json",
@@ -50,8 +50,8 @@ function getAllReservas() {
     });
 }
 
-function deleteReserva(movieId) {
-    var myUrl = "/movies/" + movieId;
+function deleteReserva(bookingsID) {
+    var myUrl = "/reservados/" + bookingsID;
     $.ajax({
         type: "DELETE",
         dataType: "json",
@@ -66,8 +66,8 @@ function deleteReserva(movieId) {
     });
 }
 
-function putReserva(movieId) {
-    var myUrl = "/movies/" + movieId;
+function putReserva(bookingsID) {
+    var myUrl = "/reservados/" + bookingsID;
     $.ajax({
         type: "PUT",
         dataType: "json",

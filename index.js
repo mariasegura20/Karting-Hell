@@ -16,13 +16,13 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const moviesService = require('./routes/bookings-service');
-const movies = require('./routes/bookings');
-app.use('/bookings', movies);
+const bookingsService = require('./routes/bookings-service');
+const bookings = require('./routes/bookings');
+app.use('/bookings', bookings);
 
 const server = http.createServer(app);
 
-moviesService.connectDb(function (err) {
+bookingsService.connectDb(function (err) {
     if (err) {
         console.log('Could not connect with MongoDB - bookingsService');
         process.exit(1);
