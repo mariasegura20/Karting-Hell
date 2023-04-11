@@ -7,7 +7,7 @@ const Bookings = function () {
 };
 
 Bookings.prototype.connectDb = function (callback) {
-    MongoClient.connect("mongodb+srv://mariasegura20:zmRS3pNBBQ@msb-pnet-2022-2023.1bw9w4u.mongodb.net/?retryWrites=true&w=majority",
+    MongoClient.connect("mongodb+srv://elcarlillo:Mariaestonta3@cvr-pnet-2022-2023.hqiabap.mongodb.net/?retryWrites=true&w=majority",
         {useNewUrlParser: true, useUnifiedTopology: true},
         function (err, database) {
             if (err) {
@@ -15,7 +15,7 @@ Bookings.prototype.connectDb = function (callback) {
                 callback(err);
             }
 
-            db = database.db('pdp-pnet-2020-2021').collection('kartingHell');
+            db = database.db('cvr-pnet-2022-2023').collection('kartingHell');
             console.log("Conexión correcta");
             callback(err, database);
         });
@@ -30,7 +30,13 @@ Bookings.prototype.get = function (_id, callback) {
 };
 
 Bookings.prototype.getAll = function (callback) {
-    return db.find({}).toArray(callback);
+    db.find({}).toArray((err, reservas) => {
+        if (err) {
+          callback(err);
+        } else {
+          callback(null, reservas);
+        }
+      });
 };
 
 Bookings.prototype.update = function (_id, updatedbooking, callback) {

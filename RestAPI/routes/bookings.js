@@ -2,10 +2,10 @@
 
 const express = require('express');
 const router = express.Router();
-const bookingsService = require('./bookings-service');
+const bookingService = require('./bookings-service');
 
 router.get('/', function (req, res) {
-    bookingsService.getAll((err, bookings) => {
+    bookingService.getAll((err, bookings) => {
             if (err) {
                 res.status(500).send({
                     msg: err
@@ -23,7 +23,7 @@ router.get('/', function (req, res) {
 
 router.post('/', function (req, res) {
     let bookings = req.body;
-    bookingsService.add(bookings, (err, bookings) => {
+    bookingService.add(bookings, (err, bookings) => {
             if (err) {
                 res.status(500).send({
                     msg: err
@@ -39,7 +39,7 @@ router.post('/', function (req, res) {
 
 
 router.delete('/', function (req, res) {
-    bookingsService.removeAll((err) => {
+    bookingService.removeAll((err) => {
         if (err) {
             res.status(500).send({
                 msg: err
@@ -55,7 +55,7 @@ router.delete('/', function (req, res) {
 
 router.get('/:_id', function (req, res) {
     let _id = req.params._id;
-    bookingsService.get(_id, (err, bookings) => {
+    bookingService.get(_id, (err, bookings) => {
             if (err) {
                 res.status(500).send({
                 	msg: err
@@ -75,7 +75,7 @@ router.get('/:_id', function (req, res) {
 router.put('/:_id', function (req, res) {
     const _id = req.params._id;
     const updatedBookings = req.body;
-    bookingsService.update(_id, updatedBookings, (err, numUpdates) => {
+    bookingService.update(_id, updatedBookings, (err, numUpdates) => {
         if (err) {
             res.status(500).send({
                 msg: err
@@ -94,7 +94,7 @@ router.put('/:_id', function (req, res) {
 
 router.delete('/:_id', function (req, res) {
     const _id = req.params._id;
-    bookingsService.remove(_id, (err) => {
+    bookingService.remove(_id, (err) => {
         if (err) {
             res.status(500).send({
                 msg: err

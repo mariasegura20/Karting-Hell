@@ -1,0 +1,22 @@
+{
+    "reservas" : [
+        {
+            "nombre" : "paco",
+            "apellidos" : "Jimenez sola",
+            "fecha" : "10/5/2023",
+            "personas" : "7",
+            "pista" : "Indoor",
+            "inicio" : "10:45",
+            "fin" : "10:50"            
+        },
+        {
+            "nombre" : "juan",
+            "apellidos" : "garcia jimenez",
+            "fecha" : "10/5/2023",
+            "personas" : "7",
+            "pista" : "Indoor",
+            "inicio" : "10:45",
+            "fin" : "10:50"
+        }
+    ]
+}

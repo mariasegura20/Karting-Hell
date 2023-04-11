@@ -22,6 +22,10 @@ app.use('/bookings', bookings);
 
 const server = http.createServer(app);
 
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/bookings.html'));
+});
+
 bookingsService.connectDb(function (err) {
     if (err) {
         console.log('Could not connect with MongoDB - bookingsService');
