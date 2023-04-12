@@ -52,5 +52,3 @@ Bookings.prototype.removeAll = function (callback) {
 };
 
 module.exports = new Bookings();
-
-

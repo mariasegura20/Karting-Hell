@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,16 +8,32 @@
 
 	<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
 	<script type="text/javascript" src="js/invocaciones.js"></script>
+	<link rel="stylesheet" href="bookings.css">
   </head>
-  <body>
+  <body onload="getAllReservas()">
 	<h1>Reservas de karts de clientes</h1>
+	<div class="inputs">
+		<div id="bloque_get">
+			<input type="button" value="GET" onclick="getReserva()" />
+			<input type="button" value="DELETE" onclick="deleteReserva()" />
+			<input type="text" id="input_get"/>
+		</div>
+		<input type="button" value="GET ALL" onclick="getAllReservas()" />
+		<input type="button" value="DELETE ALL" onclick="getAllDelete()"/>
+		<div id="bloque_post">
+			<input type="button" value="POST" onclick="postReserva()" />
+			<input type="button" value="PUT" onclick="putReserva()" />
+			<input type="text" id="input_nombre"/>
+			<input type="text" id="input_apellidos"/>
+			<input type="text" id="input_fecha"/>
+			<input type="text" id="input_personas"/>
+			<input type="text" id="input_pista"/>
+			<input type="text" id="input_inicio"/>
+			<input type="text" id="input_fin"/>
+		</div>
+	</div>
 
-	<input type="button" value="GET" onclick="getReserva('6417163dd7768a6506e8ce74')" />
-	<input type="button" value="POST" onclick="postReserva()" />
-	<input type="button" value="GET ALL" onclick="getAllReserva()" />
-	<input type="button" value="DELETE" onclick="deleteReserva('605392749aacc81b54ec2086')" />
-	<input type="button" value="PUT" onclick="putReserva('5e7762ffc5f7d46fb719329a')" />
-
+	
 	<h3 id="resReserva"></h3>
   </body>
 </html>

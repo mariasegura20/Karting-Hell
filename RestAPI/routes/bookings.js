@@ -46,7 +46,7 @@ router.delete('/', function (req, res) {
             });
         } else {
             res.status(200).send({
-                msg: '¡Reserva eliminada!'
+                msg: '¡Todas las reservas eliminadas!'
             });
         }
     });
@@ -93,7 +93,7 @@ router.put('/:_id', function (req, res) {
 });
 
 router.delete('/:_id', function (req, res) {
-    const _id = req.params._id;
+    let _id = req.params._id;
     bookingService.remove(_id, (err) => {
         if (err) {
             res.status(500).send({
@@ -101,7 +101,7 @@ router.delete('/:_id', function (req, res) {
             });
         } else {
             res.status(200).send({
-                msg: 'Reserva eliminada'
+                msg: '¡Reserva eliminada!'
             });
         }
     });
