@@ -13,27 +13,34 @@
   <body onload="getAllReservas()">
 	<h1>Reservas de karts de clientes</h1>
 	<div class="inputs">
-		<div id="bloque_get">
-			<input type="button" value="GET" onclick="getReserva()" />
-			<input type="button" value="DELETE" onclick="deleteReserva()" />
-			<input type="text" id="input_get"/>
+		<div id="bloque_get" class="column">
+			<div class="row">
+				<input type="button" value="GET" onclick="getReserva()" />
+				<input type="button" value="DELETE" onclick="deleteReserva()" />
+			</div>
+			<input type="text" id="input_get" placeholder="ID de la Reserva"/>
 		</div>
-		<input type="button" value="GET ALL" onclick="getAllReservas()" />
-		<input type="button" value="DELETE ALL" onclick="getAllDelete()"/>
-		<div id="bloque_post">
-			<input type="button" value="POST" onclick="postReserva()" />
-			<input type="button" value="PUT" onclick="putReserva()" />
-			<input type="text" id="input_nombre"/>
-			<input type="text" id="input_apellidos"/>
-			<input type="text" id="input_fecha"/>
-			<input type="text" id="input_personas"/>
-			<input type="text" id="input_pista"/>
-			<input type="text" id="input_inicio"/>
-			<input type="text" id="input_fin"/>
+		<div id="center" class="column">
+			<input type="button" value="GET ALL" onclick="getAllReservas()" />
+			<input type="button" value="DELETE ALL" onclick="getAllDelete()"/>
+		</div>
+		<div id="bloque_post" class="column">
+			<div class="row">
+				<input type="button" value="POST" onclick="postReserva()" />
+				<input type="button" value="PUT" onclick="putReserva()" />
+			</div>
+			<input type="text" id="input_nombre" placeholder="Nombre"/>
+			<input type="text" id="input_apellidos" placeholder="Apellidos"/>
+			<input type="date" id="input_fecha"/>
+			<input type="number" id="input_personas" placeholder="Nº Personas"/>
+			<input type="text" id="input_pista" placeholder="Pistas"/>
+			<div class="row">
+				<input type="text" id="input_inicio" placeholder="Hora Inicio"/>
+				<input type="text" id="input_fin" placeholder="Hora Fin"/>
+			</div>
 		</div>
 	</div>
 
-	
 	<h3 id="resReserva"></h3>
   </body>
 </html>

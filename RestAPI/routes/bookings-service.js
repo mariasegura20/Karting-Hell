@@ -7,7 +7,7 @@ const Bookings = function () {
 };
 
 Bookings.prototype.connectDb = function (callback) {
-    MongoClient.connect("mongodb+srv://elcarlillo:Mariaestonta3@cvr-pnet-2022-2023.hqiabap.mongodb.net/?retryWrites=true&w=majority",
+    MongoClient.connect("mongodb+srv://mariasegura20:zmRS3pNBBQ@msb-pnet-2022-2023.1bw9w4u.mongodb.net/?retryWrites=true&w=majority",
         {useNewUrlParser: true, useUnifiedTopology: true},
         function (err, database) {
             if (err) {
