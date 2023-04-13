@@ -55,7 +55,7 @@ function postReserva() {
         }
     });
 }
-function getAllDelete() {
+function deleteAllReserva() {
     var myUrl = "/bookings";
     $.ajax({
         type: "DELETE",
