@@ -14,7 +14,6 @@ app.use(express.urlencoded({
 app.use(logger('dev'));
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, 'public')));
 
 const bookingsService = require('./routes/bookings-service');
 const bookings = require('./routes/bookings');
