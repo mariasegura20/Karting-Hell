@@ -45,8 +45,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:text="Ver"
-                android:textColor="@color/white" />
+                android:text="@string/button_view"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/red"/>
         </RelativeLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

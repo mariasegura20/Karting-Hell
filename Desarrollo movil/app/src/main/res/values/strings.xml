@@ -10,6 +10,11 @@
     <string name="menu_circuits">Circuitos</string>
     <string name="menu_bookings">Reservas</string>
     <string name="menu_location">Localización</string>
+    <string name="button_view">Ver</string>
+    <string name="app_mail">info@kartinghell.com</string>
+    <string name="details_bookings_title">Detalles de la reserva</string>
+    <string name="button_edit">Editar</string>
+    <string name="button_delete">Eliminar</string>
 
 
 </resources>
