@@ -3,12 +3,12 @@
     <style name="Theme.KartingHell" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/red</item>
-        <item name="colorPrimaryVariant">@color/dark_red</item>
+        <item name="colorPrimaryVariant">@color/light_red</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/black</item>
-        <item name="colorSecondaryVariant">@color/dark_gray</item>
-        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/light_red</item>
+        <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
@@ -22,4 +22,7 @@
     <style name="Theme.KartingHell.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.KartingHell.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <color name="red">#D32F2F</color>
+    <color name="light_red">#CF4D4D</color>
 </resources>

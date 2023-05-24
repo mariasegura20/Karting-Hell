@@ -1,53 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/recyclerView"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/recyclerView"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+app:cardCornerRadius="8dp">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="8dp">
-
-    <LinearLayout
+    android:orientation="vertical">
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <RelativeLayout
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/textViewBookingsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la Reserva"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/linearLayoutDateNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp">
-            <TextView
-                android:id="@+id/textViewBookingsName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nombre de la Reserva"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+            android:layout_below="@id/textViewBookingsName">
             <TextView
                 android:id="@+id/textViewBookingsDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewBookingsName"
+                android:layout_below="@id/linearLayoutDateNum"
                 android:text="Fecha"
-                android:textColor="@color/dark_gray"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
+            <TextView
+                android:id="@+id/textViewBookingsNumPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBookingsDate"
+                android:paddingLeft="20dp"
+                android:text="Num Personas"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutDateNum">
             <TextView
                 android:id="@+id/textViewBookingsStartHour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textViewBookingsDate"
-                android:text="Hora de inicio"
-                android:textColor="@color/dark_gray"
+                android:text="Hora inicio"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
-            <Button
-                android:id="@+id/buttonView"
+            <TextView
+                android:id="@+id/textViewBookingsEndHour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:text="@string/button_view"
+                android:layout_below="@id/textViewBookingsStartHour"
+                android:text="Hora fin"
                 android:textColor="@color/black"
-                android:backgroundTint="@color/red"/>
-        </RelativeLayout>
-    </LinearLayout>
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:layout_below="@id/linearLayoutHour"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/buttonEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_edit" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_delete"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
 </androidx.cardview.widget.CardView>
