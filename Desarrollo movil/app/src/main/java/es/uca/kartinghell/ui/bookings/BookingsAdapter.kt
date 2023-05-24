@@ -47,10 +47,10 @@ class BookingsAdapter(private var bookings: List<Bookings>) : RecyclerView.Adapt
         holder.startHourTextView.text = currentBooking.startHour + " - "
         holder.endHourTextView.text = currentBooking.endHour
         holder.editButton.setOnClickListener {
-
+            Toast.makeText(holder.itemView.context, "En estos momentos no está disponible esta opción...", Toast.LENGTH_SHORT).show()
         }
         holder.deleteButton.setOnClickListener {
-
+            Toast.makeText(holder.itemView.context, "En estos momentos no está disponible esta opción...", Toast.LENGTH_SHORT).show()
         }
     }
 
