@@ -1,0 +1,229 @@
+/* TIPOGRAFÍA */
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+
+@font-face {
+    font-family: 'Pontano Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+}  
+
+* {
+    color: #000000;
+    font-family: 'Pontano Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+    align-items: center;
+    background-color: #FF0000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+}
+
+/* Logotipo */
+.logo img {
+    height: 9vh;
+}
+
+/* Enlaces del menú (versión escritorio) */
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    font-size: 1.25rem;
+    font-weight: 700;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-links a {
+    position: relative;
+}
+
+/* Animación en la lista del menú */
+.nav-links a::before {
+    background-color: #000000;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+
+.nav-links a:hover::before {
+    left: 0;
+    transform: scaleX(1);
+    width: 100%;
+}
+
+/* Icono del menú (versión móvil)*/
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    background-color: #000000;
+    height: 3px;
+    margin: 5px;
+    width: 25px;
+}
+
+/* Enlaces del menú (versión móvil) */
+.nav-list {
+    display: none;
+}
+
+.nav-list.responsive {
+    align-items: center;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav-list.responsive li {
+    list-style: none;
+    margin: 4vh;
+}
+
+.nav-list.responsive li a {
+    color: inherit;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-list.responsive a {
+    position: relative;
+}
+
+/* Animación en la lista del menú */
+.nav-list.responsive a::before {
+    background-color: #FFFFFF;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+    width: 0;
+}
+
+.nav-list.responsive a:hover::before {
+    left: 0;
+    transform: scaleX(1);
+    width: 100%;
+}
+
+/* BOTONES */
+button {
+    background: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0px 15px 15px 3px rgba(0, 0, 0, 0.75);
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 5px 15px;
+}
+
+button:hover {
+    margin: -2px 0;
+    padding:7px 20px;
+}
+
+.redButton {
+    background: #FF0000;
+    border: 1px solid #FF0000;
+    border-radius: 25px;
+    box-shadow: 0px 15px 15px 3px rgba(0, 0, 0, 0.75);
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 5px 15px;
+}
+
+.redButton:hover {
+    margin: -2px 0;
+    padding:7px 20px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content:space-around;
+    padding: 1vh 2vw;
+}
+
+footer h3, footer p, .copyright, .beginning {
+    color:#FFFFFF;
+}
+
+.footer-column {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-left, .footer-right {
+    height: 15vh;
+    width: 30vw;
+}
+
+.footer-tab {
+    margin-left: 2vw;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    footer {
+        height: max-content;
+    }
+
+    .footer-column {
+        flex-direction: column;
+    }
+
+    .footer-left,.footer-right {
+        margin: 2vh 2vw;
+        width: calc(100% - 4vw);
+        height: 20vh;
+    }
+
+    .footer-tab {
+        margin-left: 5vw;
+    }
+}

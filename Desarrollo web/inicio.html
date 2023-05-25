@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Karting Hell</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Karting Hell es una empresa de alquiler de karts situada en Hell, Noruega.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/smallLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header id="start">
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="inicio.html"> <img src="img/logo.png" alt="Logo de Karting Hell"> </a>
+            </div>
+            <!-- Versión escritorio -->
+            <ul class="nav-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="circuitos.html">Circuitos</a></li>
+                <li><a href="reservar.html">Reservar</a></li>
+                <li><a href="visitanos.html">Visítanos</a></li>
+            </ul>
+            <!-- Versión móvil -->
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <!-- Versión móvil -->
+        <ul class="nav-list">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="circuitos.html">Circuitos</a></li>
+            <li><a href="reservar.html">Reservar</a></li>
+            <li><a href="visitanos.html">Visítanos</a></li>
+        </ul>
+    </header>
+
+    <!-- SECCIÓN DE BIENVENIDA -->
+    <section class="welcome">
+        <div class="text-box">
+            <h1>¡BIENVENIDOS!</h1>
+            <p>Aquí podrás disfrutar de la emoción y la adrenalina de conducir nuestros karts en la pista que mejor se adapte a ti, para hacer que tu experiencia sea inolvidable.</p>
+            <button onclick="window.location='reservar.html'">Reservar</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CIRCUITOS + TWITTER -->
+    <div class="preview-circuits-aside">
+
+        <!-- Previsualización de circuitos -->
+        <section class="section-preview-circuits">
+            <h2>NUESTROS CIRCUITOS</h2>
+            <div class="preview-circuits">
+                <svg class="preview-circuits-top" id="nameCircuit" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice">
+                    <polygon points='-75,0 175,0 75,100 25,100' />
+                    <text class="text-top circuits-large" x="36%" y="97%">Circuito Indoor</text>
+                    <text class='text-top circuits-phone' x='31%' y='93%'>Circuito Indoor</text>
+                </svg>
+                <div class="preview-circuits-middle">
+                    <svg class="preview-circuits-middle-left" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice" onclick="newBackground('izq')">
+                        <polygon points='0,0 100,0 50,100 0,100'/>
+                        <text class="text-middle circuits-large" x="15%" y="96%">&lt;</text>
+                        <text class="text-middle circuits-phone" x="15%" y="80%">&lt;</text>
+                    </svg>
+                    <svg class="preview-circuits-middle-right" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice" onclick="newBackground('der')">
+                        <polygon points='0,0 100,0 50,100 0,100'/>
+                        <text class="text-middle circuits-large" x="15%" y="96%">&lt;</text>
+                        <text class="text-middle circuits-phone" x="15%" y="80%">&lt;</text>
+                    </svg>
+                </div>
+                <svg class="preview-circuits-bottom" viewBox="0 0 100 100" preserveAspectRatio="xMidYMax slice" onclick="window.location='reservar.html'">
+                    <polygon points='-75,0 175,0 75,100 25,100'/>
+                    <text class="text-bottom circuits-large" x="-62%" y="-93%">Reservar</text>
+                    <text class="text-bottom circuits-phone" x="-62%" y="-90%">Reservar</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Twitter -->
+        <aside>
+            <a class="twitter-timeline" data-height="450" data-theme="dark" href="https://twitter.com/Karting_RFEdA?ref_src=twsrc%5Etfw">Tweets by Karting_RFEdA</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+        </aside>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-column">
+            <div class="footer-left">
+                <h3>Contáctanos</h3>
+                <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en ponerte en contacto con nosotros:</p>
+                <p class="footer-tab">Lånkebanen, 7517 Hell, Noruega</p>
+                <a class="footer-tab" href="mailto:info@kartinghell.com">info@kartinghell.com</a>
+            </div>
+            <div class="footer-right">
+                <h3>Patrocinadores</h3>
+                <p></p>
+            </div>
+        </div>
+        <a class="beginning" href="#start">IR AL COMIENZO</a>
+        <div class="copyright">COPYRIGHT 2023 &#169; KARTING HELL</div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+</html>
