@@ -13,9 +13,6 @@ import es.uca.kartinghell.databinding.FragmentBookingsBinding
 class BookingsFragment : Fragment() {
 
     private var _binding: FragmentBookingsBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     private lateinit var recyclerView: RecyclerView

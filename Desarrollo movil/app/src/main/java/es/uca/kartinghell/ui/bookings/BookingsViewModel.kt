@@ -10,10 +10,10 @@ class BookingsViewModel : ViewModel() {
     init {
         // Lista de reservas
         val bookings = listOf(
-            Bookings("Carlos", "12345678A", 9956111111, "carlos@gm.es", "28/05/2023", "17:30", "18:30", 10, "", "Indoor"),
-            Bookings("María", "87654321B", 993646735, "maria@gm.es", "28/05/2023", "19:00", "19:30", 5, "", "Outdoor"),
-            Bookings("Alejandro", "12345678A", 673868364, "alejandro@gm.es", "30/05/2023", "19:30", "20:30", 11, "", "Competición"),
-            Bookings("David", "12345678A", 693847361, "david@gm.es", "12/06/2023", "17:00", "18:00", 7, "", "Outdoor")
+            Bookings("Luna", "12345678A", "9956111111", "correo@gm.es", "12/12/12", "17:30", "18:30", 10, "", "Indoor"),
+            Bookings("Luna", "12345678A", "9956111111", "correo@gm.es", "12/12/12", "17:30", "18:30", 10, "", "Indoor"),
+            Bookings("Luna", "12345678A", "9956111111", "correo@gm.es", "12/12/12", "17:30", "18:30", 10, "", "Indoor"),
+            Bookings("Luna", "12345678A", "9956111111", "correo@gm.es", "12/12/12", "17:30", "18:30", 10, "", "Indoor")
 
         )
         bookingsLiveData.value = bookings

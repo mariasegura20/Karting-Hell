@@ -13,10 +13,6 @@
             android:icon="@drawable/ic_menu_circuits"
             android:title="@string/menu_circuits" />
         <item
-            android:id="@+id/nav_book"
-            android:icon="@drawable/ic_menu_book"
-            android:title="@string/menu_book" />
-        <item
             android:id="@+id/nav_bookings"
             android:icon="@drawable/ic_menu_bookings"
             android:title="@string/menu_bookings" />
